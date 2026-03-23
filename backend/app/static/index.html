@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>突破次元壁</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="left-rail">
+      <div class="app-logo">次</div>
+
+      <button id="navChat" class="rail-btn active" title="聊天">
+        <svg viewBox="0 0 24 24"><path d="M4 5h16v10H8l-4 4z"/></svg>
+      </button>
+
+      <button id="navContacts" class="rail-btn" title="通讯录">
+        <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5z"/></svg>
+      </button>
+
+      <button id="navMoments" class="rail-btn" title="朋友圈">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-6.7-4.35-9.33-8A5.39 5.39 0 0 1 2 10a5 5 0 0 1 8.5-3.54L12 7.96l1.5-1.5A5 5 0 0 1 22 10a5.39 5.39 0 0 1-.67 3c-2.63 3.65-9.33 8-9.33 8z"/></svg>
+      </button>
+
+      <button id="navSettings" class="rail-btn bottom" title="设置">
+        <svg viewBox="0 0 24 24"><path d="M19.14 12.94a7.48 7.48 0 0 0 .05-.94 7.48 7.48 0 0 0-.05-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.28 7.28 0 0 0-1.63-.94l-.36-2.54A.5.5 0 0 0 13.9 2h-3.8a.5.5 0 0 0-.49.42l-.36 2.54a7.28 7.28 0 0 0-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.71 8.48a.5.5 0 0 0 .12.64l2.03 1.58a7.48 7.48 0 0 0-.05.94 7.48 7.48 0 0 0 .05.94L2.83 14.16a.5.5 0 0 0-.12.64l1.92 3.32a.5.5 0 0 0 .6.22l2.39-.96a7.28 7.28 0 0 0 1.63.94l.36 2.54a.5.5 0 0 0 .49.42h3.8a.5.5 0 0 0 .49-.42l.36-2.54a7.28 7.28 0 0 0 1.63-.94l2.39.96a.5.5 0 0 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64zM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5z"/></svg>
+      </button>
+    </aside>
+
+    <section class="session-column">
+      <div class="column-top">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24"><path d="M10 4a6 6 0 1 0 3.87 10.59l4.77 4.77 1.41-1.41-4.77-4.77A6 6 0 0 0 10 4z"/></svg>
+          <input id="searchInput" class="search-input" placeholder="搜索" />
+        </div>
+        <button id="openAddContactBtn" class="icon-btn" title="添加联系人">
+          <svg viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"/></svg>
+        </button>
+      </div>
+
+      <div id="sessionTitleBar" class="session-title-bar">聊天</div>
+      <div id="chatList" class="chat-list"></div>
+      <div id="contactList" class="contact-list hidden"></div>
+      <div id="settingsShortcutList" class="contact-list hidden"></div>
+    </section>
+
+    <section class="main-column">
+      <header id="mainHeader" class="main-header">
+        <div class="header-left">
+          <img id="headerAvatar" class="header-avatar hidden" src="" alt="avatar" />
+          <div>
+            <div id="headerName" class="header-name">请选择联系人</div>
+            <div id="headerDesc" class="header-desc">未添加联系人时，请点击左上角 + 搜索并添加</div>
+          </div>
+        </div>
+      </header>
+
+      <main id="chatPage" class="page">
+        <div id="chatArea" class="chat-area empty">
+          <div class="empty-state">
+            <div class="empty-icon">💬</div>
+            <div class="empty-title">还没有开始聊天</div>
+            <div class="empty-sub">先点击左上角 +，搜索并添加一个角色联系人。</div>
+          </div>
+        </div>
+      </main>
+
+      <main id="settingsPage" class="page hidden settings-page">
+        <div class="settings-grid">
+          <section class="settings-card">
+            <div class="card-title">模型设置</div>
+            <div class="settings-row">
+              <label>模型模式</label>
+              <select id="settingsModeSelect" class="normal-select">
+                <option value="mock">mock</option>
+                <option value="ollama">ollama</option>
+              </select>
+            </div>
+            <div class="settings-row">
+              <label>Ollama 连接状态</label>
+              <div id="settingsOllamaStatus" class="status-text">未检测</div>
+            </div>
+            <div class="settings-row">
+              <label>模型选择</label>
+              <select id="settingsModelSelect" class="normal-select"></select>
+            </div>
+            <div class="settings-actions">
+              <button id="refreshModelsBtn" class="secondary-btn">刷新模型列表</button>
+            </div>
+          </section>
+
+          <section class="settings-card">
+            <div class="card-title">聊天设置</div>
+            <div class="settings-row">
+              <label>发送快捷键</label>
+              <select id="settingsShortcutSelect" class="normal-select">
+                <option value="enter">Enter 发送</option>
+                <option value="ctrl_enter">Ctrl + Enter 发送</option>
+              </select>
+            </div>
+            <div class="settings-row">
+              <label>主动消息检测间隔（秒）</label>
+              <input id="settingsIntervalInput" class="normal-input" type="number" min="5" max="600" />
+            </div>
+            <div class="settings-actions">
+              <button id="saveSettingsBtn" class="primary-btn">保存设置</button>
+            </div>
+          </section>
+
+          <section class="settings-card">
+            <div class="card-title">节日与纪念日</div>
+            <div class="card-subtitle">生日只保存月日，用于生日祝福、节日动态和纪念日触发。</div>
+            <div class="settings-row">
+              <label>你的生日</label>
+              <input id="settingsBirthdayInput" class="normal-input" type="text" maxlength="5" placeholder="MM-DD，例如 08-17" />
+            </div>
+            <div class="settings-hint">留空则不触发生日祝福；格式固定为两位月份 + 两位日期。</div>
+            <div class="settings-actions">
+              <button id="saveBirthdayBtn" class="primary-btn">保存生日</button>
+            </div>
+          </section>
+
+          <section class="settings-card full-width">
+            <div class="card-title">头像管理</div>
+            <div class="card-subtitle">支持 png / jpg / jpeg / svg。这里可以更换你自己的头像，也可以替换角色头像。</div>
+            <div id="avatarToolGrid" class="avatar-tool-grid"></div>
+          </section>
+        </div>
+      </main>
+
+      <footer id="composer" class="composer">
+        <textarea id="messageInput" class="message-input" placeholder="输入消息"></textarea>
+        <div class="composer-actions">
+          <button id="toggleProfileBtn" class="secondary-btn">资料 / 事件</button>
+          <button id="sendBtn" class="primary-btn">发送</button>
+        </div>
+      </footer>
+    </section>
+  </div>
+
+  <div id="detailMask" class="overlay-mask hidden"></div>
+  <aside id="detailDrawer" class="detail-drawer hidden">
+    <div class="detail-header">
+      <div class="detail-tabs">
+        <button id="detailTabProfile" class="detail-tab active">资料</button>
+        <button id="detailTabEvents" class="detail-tab">事件回顾</button>
+      </div>
+      <button id="closeDetailBtn" class="drawer-close">×</button>
+    </div>
+    <div id="detailProfile" class="detail-body"></div>
+    <div id="detailEvents" class="detail-body hidden"></div>
+  </aside>
+
+  <div id="addContactMask" class="overlay-mask hidden"></div>
+  <section id="addContactDrawer" class="add-contact-drawer hidden">
+    <div class="drawer-toolbar">
+      <div class="drawer-title">添加联系人</div>
+      <button id="closeAddContactBtn" class="drawer-close">×</button>
+    </div>
+    <div class="add-search-wrap">
+      <input id="addContactSearchInput" class="normal-input full-input" placeholder="输入角色名或作品名搜索" />
+    </div>
+    <div class="drawer-hint">仅显示尚未添加的角色</div>
+    <div id="addContactResults" class="add-contact-results"></div>
+  </section>
+
+  <div id="contextMenu" class="context-menu hidden">
+    <button id="contextPinBtn" class="context-menu-item">置顶聊天</button>
+    <button id="contextDeleteBtn" class="context-menu-item danger">删除联系人</button>
+  </div>
+
+  <div id="toastStack" class="toast-stack"></div>
+
+  <div id="appDialogMask" class="app-dialog-mask hidden"></div>
+  <section id="appDialog" class="app-dialog hidden" aria-modal="true" role="dialog">
+    <div class="app-dialog-header">
+      <div id="appDialogTitle" class="app-dialog-title">提示</div>
+    </div>
+    <div id="appDialogContent" class="app-dialog-content"></div>
+    <div class="app-dialog-actions">
+      <button id="appDialogCancelBtn" class="secondary-btn hidden">取消</button>
+      <button id="appDialogConfirmBtn" class="primary-btn">确定</button>
+    </div>
+  </section>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

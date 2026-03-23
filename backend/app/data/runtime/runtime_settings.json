@@ -1,0 +1,7 @@
+{
+  "llm_mode": "ollama",
+  "ollama_model": "qwen3:32b",
+  "send_shortcut": "enter",
+  "detail_panel_default_open": false,
+  "auto_check_interval_seconds": 20
+}

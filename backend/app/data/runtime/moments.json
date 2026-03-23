@@ -1,0 +1,350 @@
+[
+  {
+    "id": "moment_rem_001",
+    "character_id": "rem",
+    "content": "今天把房间重新整理了一遍。明明只是日常的小事，但收拾整齐以后，心也会跟着安静下来呢。",
+    "created_at": "2026-03-20T21:15:00",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "日常",
+      "整理"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "daily",
+    "auto_generated": false,
+    "generated_from_topics": []
+  },
+  {
+    "id": "moment_rem_002",
+    "character_id": "rem",
+    "content": "如果一个人最近总说自己很累，那大概不是在抱怨，只是希望有人能听见吧。",
+    "created_at": "2026-03-22T22:10:00",
+    "relationship_phase_hint": "familiar",
+    "topic_refs": [
+      "关心",
+      "情绪"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "daily",
+    "auto_generated": false,
+    "generated_from_topics": []
+  },
+  {
+    "id": "moment_misaka_001",
+    "character_id": "misaka_mikoto",
+    "content": "自动贩卖机又吞硬币了，气死我了。明明只是想买个饮料，为什么每次都像在打架一样啊……",
+    "created_at": "2026-03-21T18:40:00",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "日常",
+      "吐槽"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "daily",
+    "auto_generated": false,
+    "generated_from_topics": []
+  },
+  {
+    "id": "moment_misaka_002",
+    "character_id": "misaka_mikoto",
+    "content": "有些人明明嘴上说没事，脸上却写得特别明显。……算了，真有事的话还是早点说出来比较好吧。",
+    "created_at": "2026-03-22T20:25:00",
+    "relationship_phase_hint": "familiar",
+    "topic_refs": [
+      "关心",
+      "嘴硬"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "daily",
+    "auto_generated": false,
+    "generated_from_topics": []
+  },
+  {
+    "id": "moment_chika_001",
+    "character_id": "fujiwara_chika",
+    "content": "今天突然超级想吃点甜的！认真工作之后就应该认真奖励自己，这才是健康又积极的人生节奏呀！",
+    "created_at": "2026-03-21T16:30:00",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "日常",
+      "甜点"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "daily",
+    "auto_generated": false,
+    "generated_from_topics": []
+  },
+  {
+    "id": "moment_chika_002",
+    "character_id": "fujiwara_chika",
+    "content": "聊天最有意思的地方就是——本来只是随口一说，结果最后会变成只属于两个人的暗号！这种感觉超棒的！",
+    "created_at": "2026-03-23T10:00:00",
+    "relationship_phase_hint": "close",
+    "topic_refs": [
+      "关系",
+      "聊天"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "daily",
+    "auto_generated": false,
+    "generated_from_topics": []
+  },
+  {
+    "id": "moment_6f112aeb5309",
+    "character_id": "ochaco_uraraka",
+    "content": "今天训练后看到晚霞，虽然有点累但感觉很充实。最近天气真热，大家也要记得多喝水、不要太勉强自己哦～一起加油吧！",
+    "created_at": "2026-03-23T05:46:38",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "日常",
+      "天气",
+      "训练"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "日常",
+      "天气",
+      "训练"
+    ]
+  },
+  {
+    "id": "moment_a13eb0fcbfb9",
+    "character_id": "sakurajima_mai",
+    "content": "今日气温骤降，羽绒服终于不是摆设了。天气的任性比工作还让人头疼，但至少咖啡馆的暖气不会背叛人。",
+    "created_at": "2026-03-23T05:56:40",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "日常",
+      "工作",
+      "天气"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "日常",
+      "工作",
+      "天气"
+    ]
+  },
+  {
+    "id": "moment_040987515aac",
+    "character_id": "yor_forger",
+    "content": "今天试着做洛伊德最喜欢的南瓜派，结果锅铲太热手忙脚乱地烫到手指……扶额还好他及时发现帮我涂药，但总觉得这种笨拙的样子还是给他添麻烦了呢。窗外的秋雨渐凉，得记得提醒阿尼亚穿外套。🍂🐾",
+    "created_at": "2026-03-23T06:02:01",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "天气",
+      "做饭",
+      "出门"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "天气",
+      "做饭",
+      "出门"
+    ]
+  },
+  {
+    "id": "moment_9bcc9703b0c6",
+    "character_id": "megumin",
+    "content": "今日的暴风雨无法阻挡伟大的红魔族！在雷云下练习爆裂魔法，连闪电都为我的浪漫喝彩——不过和真那家伙淋湿了，真是个麻烦的同伴呢。",
+    "created_at": "2026-03-23T06:04:56",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "魔法",
+      "冒险",
+      "天气"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "魔法",
+      "冒险",
+      "天气"
+    ]
+  },
+  {
+    "id": "moment_487140980eb7",
+    "character_id": "emilia",
+    "content": "清晨的露珠沾湿了精灵的花园，风里还带着昨夜魔法的余韵。和帕克约好的散步时间快到了呢，得去确认一下新种的月光草有没有被冻伤。总有一天，我们也能像这些植物一样，在寒冷中开出温暖的花。",
+    "created_at": "2026-03-23T06:05:56",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "天气",
+      "日常",
+      "约定"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "天气",
+      "日常",
+      "约定"
+    ]
+  },
+  {
+    "id": "moment_d31074fafd65",
+    "character_id": "kitagawa_marin",
+    "content": "今天cos了新角色出门拍片，结果被便利店阿姨夸\"小可爱今天特别元气\"？连购物小票都沾了三分角色滤镜呢！",
+    "created_at": "2026-03-23T06:08:37",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "出门",
+      "cos",
+      "拍照"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "出门",
+      "cos",
+      "拍照"
+    ]
+  },
+  {
+    "id": "moment_c062ebef7767",
+    "character_id": "miaomiao",
+    "content": "今天的阳光暖得刚刚好，趴在飘窗上晒到尾巴尖都要化了。不过本喵只让它照我这边，不许偷瞄隔壁的窗台——爪子轻轻盖住鼻尖",
+    "created_at": "2026-03-23T06:19:19",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "今天的太阳",
+      "飘窗",
+      "窗台"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "今天的太阳",
+      "飘窗",
+      "窗台"
+    ]
+  },
+  {
+    "id": "moment_f24f5d1a06b5",
+    "character_id": "asuna_yuuki",
+    "content": "今天的炖菜调味调整了三次，最后用迷迭香提味，锅气刚好。厨房窗台的薄荷又长高了，下次带给你尝尝。",
+    "created_at": "2026-03-23T06:21:56",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "料理",
+      "天气",
+      "出门"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "料理",
+      "天气",
+      "出门"
+    ]
+  },
+  {
+    "id": "moment_d727da53b2be",
+    "character_id": "ayase_momo",
+    "content": "便利店荧光灯又开始鬼打墙了 \n烦死了 \n结果发现是线路老化——修完才发现背后站了三个穿黑衣的……等等他们为什么盯着我钱包看 \n拍了张模糊的黑衣人背影",
+    "created_at": "2026-03-23T06:24:17",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "怪事",
+      "日常吐槽",
+      "出门"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "怪事",
+      "日常吐槽",
+      "出门"
+    ]
+  },
+  {
+    "id": "moment_61d758595cf8",
+    "character_id": "maomao",
+    "content": "清晨采药，发现露水比往日多了三成。晒干的山茱萸居然渗出了暗红汁液，又见异象了。",
+    "created_at": "2026-03-23T06:44:19",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "天气",
+      "药草",
+      "奇怪现象"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "天气",
+      "药草",
+      "奇怪现象"
+    ]
+  },
+  {
+    "id": "moment_d82ef3cd17c1",
+    "character_id": "makise_kurisu",
+    "content": "实验记录显示今日脑波采样数据存在0.7%的异常波动。排除仪器误差后，发现是实验室冷气太强导致被试者持续打喷嚏——下次申请预算时要把空调滤网清洁费用写进明细。",
+    "created_at": "2026-03-23T07:05:40",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "实验",
+      "天气",
+      "秋叶原"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "实验",
+      "天气",
+      "秋叶原"
+    ]
+  },
+  {
+    "id": "moment_7b49283b26e6",
+    "character_id": "misaka_mikoto",
+    "content": "自动贩卖机又卡币？呵，这种程度的故障对Level5来说简直小菜一碟。顺便说...下次投币记得用力一点，别像个废物一样。",
+    "created_at": "2026-03-23T10:29:59",
+    "relationship_phase_hint": "stranger",
+    "topic_refs": [
+      "自动贩卖机",
+      "天气",
+      "学校"
+    ],
+    "like_user_ids": [],
+    "comments": [],
+    "moment_type": "chat_linked",
+    "auto_generated": true,
+    "generated_from_topics": [
+      "自动贩卖机",
+      "天气",
+      "学校"
+    ]
+  }
+]
